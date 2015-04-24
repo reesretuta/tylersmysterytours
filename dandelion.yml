@@ -50,11 +50,15 @@ revision_file: .revision
 # These files (from Git) will not be uploaded during a deploy
 exclude:
     - .gitignore
-    - dandelion.yml
-    - wp-config.php
+    - dandelion.yml 
+    # - wp-config.php
     - node_modules/
+    - wp-content/themes/starkers/node_modules
 # These files (from your working directory) will be uploaded on every deploy
 # additional:
 #     - public/css/print.css
 #     - public/css/screen.css
 #     - public/js/main.js
+
+
+
