@@ -181,6 +181,20 @@ body{
     }
 }
 
+#overview{
+    background-image: url('../img/whitescales.jpg');
+    background-attachment: fixed;
+    padding-bottom:110px;
+    color: #fff;
+    font-size: 16px;
+
+    h1{
+        text-shadow: 0px 0px 45px #565656;
+
+    }
+}
+
+
 #testimonials{
 	background-attachment: fixed;
 	background-image: url('../img/paintball.jpg');
