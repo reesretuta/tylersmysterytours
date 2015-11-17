@@ -30,7 +30,7 @@
 		<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/owl.carousel.css">
 		<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Raleway:100,400' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" type="image/png" href="<?php bloginfo('template_url') ?>/img/hearticon.png"/>
+		<link rel="shortcut icon" type="image/png" href="<?php bloginfo('template_url') ?>/icon.png"/>
 		<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	</head>
 	<body>
