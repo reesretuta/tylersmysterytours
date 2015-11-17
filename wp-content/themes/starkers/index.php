@@ -41,7 +41,7 @@
                 
                 <section>
                     <h1>TYLER'S MYSTERY TOURS</h1>
-                    <!-- <p>Mystery trips where your participants will only get to know what to pack, when to show up, and when they will be coming back. Our specialty is all-inclusive trips tailored around our unique, engaging activities that get your group to not only experience new things, but to interact and get to know one another on new levels. We love planning all the details so that you and your participants can suit-up, sit-back, strap-in and enjoy the adventure! Trips can be created to accommodate a variety of groups and needs, ranging from small half-day company off-sites to multi-day birthday excursions.</p> -->
+                    <p>Mystery trips where your participants will only get to know what to pack, when to show up, and when they will be coming back. Our specialty is all-inclusive trips tailored around our unique, engaging activities that get your group to not only experience new things, but to interact and get to know one another on new levels. We love planning all the details so that you and your participants can suit-up, sit-back, strap-in and enjoy the adventure! Trips can be created to accommodate a variety of groups and needs, ranging from small half-day company off-sites to multi-day birthday excursions.</p>
                 </section>
 				
 			
@@ -54,11 +54,11 @@
 				<div class="clear"></div>
 			</div>
 			<!-- END HOMEPAGE -->
-            <div id="overview">
+            <!-- <div id="overview">
                 <section>
                     <p>Mystery trips where your participants will only get to know what to pack, when to show up, and when they will be coming back. Our specialty is all-inclusive trips tailored around our unique, engaging activities that get your group to not only experience new things, but to interact and get to know one another on new levels. We love planning all the details so that you and your participants can suit-up, sit-back, strap-in and enjoy the adventure! Trips can be created to accommodate a variety of groups and needs, ranging from small half-day company off-sites to multi-day birthday excursions.</p>
                 </section>
-            </div>
+            </div> -->
 			<div id="testimonials">
                 <section>
                     <ul>
