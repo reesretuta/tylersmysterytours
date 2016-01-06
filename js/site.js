@@ -68,9 +68,12 @@ $('a[href*=#]:not([href=#])').click(function() {
 				type: 'post',
 				success: function(data){
 					if (data === 'success') {
-						alert('success');
+						alert('Thank you for your email! We will respond to you shortly.');
+						$("#contactus .required").each(function(){
+							$(this).val("");
+						});
 					}else{
-						alert('fail');
+						alert('Email fail. Please email inquiries@tylersmysterytours.com');
 					}
 					
 				}
