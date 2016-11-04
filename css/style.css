@@ -6,6 +6,7 @@
   src: url("../fonts/Bombshell_Pro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Bombshell_Pro-webfont.woff2") format("woff2"), url("../fonts/Bombshell_Pro-webfont.woff") format("woff"), url("../fonts/Bombshell_Pro-webfont.ttf") format("truetype"), url("../fonts/Bombshell_Pro-webfont.svg#bombshell_proregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 body {
   background-image: url("../img/bus-color.jpg");
   background-attachment: fixed;
@@ -23,7 +24,7 @@ body {
       font-size: 120px;
       padding-top: 120px;
       color: #fff;
-      text-shadow: 0px 0px 45px #FED3B2; }
+      text-shadow: 0px 0px 13px #FED3B2; }
       @media screen and (max-width: 420px) {
         body section > h1 {
           font-size: 55px; } }
@@ -56,7 +57,7 @@ body {
   width: 100%;
   position: absolute;
   bottom: 0px;
-  padding: 35px;
+  padding: 35px 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 150;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
@@ -98,7 +99,7 @@ body {
       background-attachment: local; } }
   #home section {
     position: relative;
-    top: 200px; }
+    top: 185px; }
     @media screen and (max-width: 420px) {
       #home section {
         top: 20px; } }
@@ -289,35 +290,26 @@ body {
 @media screen and (max-width: 700px) {
   body {
     width: 100%; }
-
   h1 {
     font-size: 2rem; }
-
   h3 {
     padding: 0; }
-
   /*HOMEPAGE*/
   #home {
     width: 100%; }
-
   #home #main p {
     font-size: 1em; }
-
   #clock {
     display: none; }
-
   .main-nav {
     width: 100%;
     height: 125px;
     padding: 0; }
-
   .main-nav a {
     display: block; }
-
   /*GALLERY*/
   #gallery {
     height: 600px; }
-
   .owl-dots .owl-dot {
     height: 10px;
     width: 10px;

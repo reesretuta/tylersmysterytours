@@ -26,8 +26,6 @@
 
 }
 
-
-
 body{
 	background-image: url('../img/bus-color.jpg');
 	background-attachment: fixed;
@@ -50,7 +48,7 @@ body{
             font-size:120px;
             padding-top:120px;
             color:#fff;
-            text-shadow: 0px 0px 45px #FED3B2;
+            text-shadow: 0px 0px 13px #FED3B2;
             @include breakpoint('mobile'){
                 font-size: 55px;
             }
@@ -88,7 +86,7 @@ body{
 	width: 100%;
 	position:absolute;
 	bottom: 0px;
-	padding: 35px;
+	padding: 35px 0;
 	background: rgba(0,0,0,.5);
 	z-index: 150;
 	box-shadow: 0 2px 3px rgba(0,0,0,.4);
@@ -142,7 +140,7 @@ body{
     }
     section{
         position: relative;
-        top:200px;
+        top:185px;
         @include breakpoint('mobile'){
             top: 20px;
         }

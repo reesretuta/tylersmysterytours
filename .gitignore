@@ -3,3 +3,4 @@ wp-content/plugins/si-contact-form/captcha/cache
 wp-config.php
 dandelion.yml
 .DS_Store
+node_modules
