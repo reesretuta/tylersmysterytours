@@ -119,6 +119,22 @@ body{
 }
 
 
+#social{
+    z-index: 151;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    @include breakpoint('mobile'){
+        display: none;
+    }
+    a{
+        display: inline-block;
+        img {
+            width: 70px;
+        }
+    }
+}
+
 /*HOMEPAGE STYLES*/
 
 
@@ -292,7 +308,7 @@ body{
 
     }
     ul{
-        padding:50px 0;
+        padding:150px 0 50px 0;
         width:80%;
         margin:0 auto;
         li{
