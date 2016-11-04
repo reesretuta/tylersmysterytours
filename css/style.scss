@@ -73,20 +73,17 @@ body{
 /* close commented backslash hack */
 
 
-
 /*NAV STYLES*/
 .main-nav,
 .container {
 	position: relative; 
 }
 
-
-
 .main-nav {
 	width: 100%;
 	position:absolute;
 	bottom: 0px;
-	padding: 35px 0;
+	padding: 35px 0px;
 	background: rgba(0,0,0,.5);
 	z-index: 150;
 	box-shadow: 0 2px 3px rgba(0,0,0,.4);
@@ -149,7 +146,7 @@ body{
         font:normal 160px 'league_gothic', Arial, Helvetica, sans-serif;
         position:relative;
 	    text-align:center;
-        font-size:120px;
+        font-size:130px;
         color:#fff;
         text-shadow:none;
         padding:0;
