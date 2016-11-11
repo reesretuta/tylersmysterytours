@@ -1,16 +1,19 @@
 $(document).ready(function(){
 	var distanceScrolled = $(window);
 	var margin = 250;
+	var allowNavUpdates = true;
 	//NAV LINKS
 
 	$('a[href*=#]:not([href=#])').click(function() {
-
-
 		if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 			if (target.length) {
-				$('html,body').animate({scrollTop: target.offset().top }, 1000);
+				allowNavUpdates = false;
+				$('html,body').animate({scrollTop: target.offset().top }, 1000, ()=>{
+					allowNavUpdates = true;
+				});
+				allowNavUpdates
 				$('nav a').removeClass();
 				$(this).addClass('active');
 				return false;
@@ -22,12 +25,14 @@ $(document).ready(function(){
 
 
 	$(window).scroll(()=>{
+		if (!allowNavUpdates) {
+			return false;
+		}
 		var d = distanceScrolled.scrollTop();
 		var posXHome = d - $("#home").offset().top;
 		var posXTestimonials = d - $("#testimonials").offset().top;
 		var posXFaq = d - $("#faq").offset().top;
 		var posXContact = d - $("#contact").offset().top;
-		console.log(posXHome, posXTestimonials, posXFaq, posXContact);
 		if (posXHome === 0) {
 			updateNav('home');
 		}
@@ -43,9 +48,7 @@ $(document).ready(function(){
 	});
 
 	function updateNav(section){
-		console.log(section);
 		$('nav a').removeClass();
-		console.log(`nav a#${section}`);
 		$(`nav a[href=#${section}]`).addClass('active');
 	}
 
