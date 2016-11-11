@@ -1,27 +1,53 @@
 $(document).ready(function(){
+	var distanceScrolled = $(window);
+	var margin = 250;
+	//NAV LINKS
 
-	
-//NAV LINKS
-
-$('a[href*=#]:not([href=#])').click(function() {
+	$('a[href*=#]:not([href=#])').click(function() {
 
 
-	if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
-		var target = $(this.hash);
-		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		if (target.length) {
-			$('html,body').animate({scrollTop: target.offset().top }, 1000);
-			$('nav a').removeClass();
-
-			$(this).addClass('active');
-			return false;
+		if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({scrollTop: target.offset().top }, 1000);
+				$('nav a').removeClass();
+				$(this).addClass('active');
+				return false;
+			}
 		}
+
+		
+	});
+
+
+	$(window).scroll(()=>{
+		var d = distanceScrolled.scrollTop();
+		var posXHome = d - $("#home").offset().top;
+		var posXTestimonials = d - $("#testimonials").offset().top;
+		var posXFaq = d - $("#faq").offset().top;
+		var posXContact = d - $("#contact").offset().top;
+		console.log(posXHome, posXTestimonials, posXFaq, posXContact);
+		if (posXHome === 0) {
+			updateNav('home');
+		}
+		if (Math.abs(posXTestimonials) < margin) {
+			updateNav('testimonials');
+		}
+		if (Math.abs(posXFaq) < margin) {
+			updateNav('faq');
+		}
+		if (Math.abs(posXContact) < margin) {
+			updateNav('contact')
+		}
+	});
+
+	function updateNav(section){
+		console.log(section);
+		$('nav a').removeClass();
+		console.log(`nav a#${section}`);
+		$(`nav a[href=#${section}]`).addClass('active');
 	}
-
-	
-});
-
-
 
 	// NAVIGATION SCROLL
 	var windowHeight = $(window).height();
