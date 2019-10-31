@@ -102,7 +102,7 @@ $(document).ready(function(){
 							$(this).val("");
 						});
 					}else{
-						alert('Email fail. Please email inquiries@tylersmysterytours.com');
+						alert('Email fail. Please email ryan@tylersmysterytours.com');
 					}
 					
 				}
